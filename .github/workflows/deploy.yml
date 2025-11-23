@@ -17,10 +17,10 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: Production
-      url: https://fasterchat.ai
+      url: https://www.fasterchat.ai
 
     env:
-      SITE_URL: https://fasterchat.ai
+      SITE_URL: https://www.fasterchat.ai
       SSH_HOST: ${{ secrets.SSH_HOST }}
       SSH_USER: ${{ secrets.SSH_USER }}
       SSH_PORT: ${{ secrets.SSH_PORT }}
