@@ -3,7 +3,12 @@ import React, { useState } from 'react';
 
 export const InstallSection = () => {
   const [copied, setCopied] = useState(false);
-  const command = "git clone https://github.com/1337hero/faster-chat.git";
+  const command = [
+    "git clone https://github.com/1337hero/faster-chat.git",
+    "cd faster-chat",
+    "bun install",
+    "bun run dev",
+  ].join("\n");
 
   const handleCopy = () => {
     navigator.clipboard.writeText(command);
